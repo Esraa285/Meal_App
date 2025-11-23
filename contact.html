@@ -1,0 +1,69 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/524eb69e96.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Weather</title>
+</head>
+<body>
+      <nav id="nav-bar">
+         <div id="sideMenu" class="side-menu">
+        <ul>
+            <li><a href="./index.html" class="text-decoration-none text-reset">Home</a></li>
+            <li><a href="./search.html" class="text-decoration-none text-reset">Search</a></li>
+            <li><a class="text-decoration-none text-reset" href="./category.html">Categories</a></li>
+            <li><a href="./Area.html" class="text-decoration-none text-reset">Area</a></li>
+            <li><a href="./integrates.html" class="text-decoration-none text-reset">Ingredients</a></li>
+            <li><a href="./contact.html" class="text-decoration-none text-reset">Contact Us</a></li>
+        </ul>
+        <div class="footer">
+            <div class="icons">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-solid fa-globe"></i>
+            </div>
+            <p>Copyright © 2019 All Rights Reserved.</p>
+        </div>
+    </div>
+
+    <div id="rightBar" class="right-bar">
+        <img src="./images/logo.png" class="top-img" />
+        <div id="toggleBtn" class="toggle-btn">☰</div>
+        <div class="bottom-icons">
+            <i class="fa-solid fa-globe"></i>
+            <i class="fa-solid fa-share-nodes"></i>
+        </div>
+    </div>
+    </nav>
+
+    <div class="container d-flex justify-content-center align-items-center p-5 mt-5 mb-5">
+        <div class="row form gy-3 align-items-center justify-content-center p-5 mt-5">
+            <div class="col-md-6">
+                <input id="name" oninput="validationData(this)" class="form-control " type="text" placeholder="Enter your Name">
+            </div>
+             <div class="col-md-6">
+                <input id="email" oninput="validationData(this)" class="form-control " type="email" placeholder="Enter your Email">
+            </div>
+             <div class="col-md-6">
+                <input id="phone" oninput="validationData(this)" class="form-control " type="text" placeholder="Enter your Phone">
+            </div>
+             <div class="col-md-6">
+                <input id="age" oninput="validationData(this)" class="form-control" type="number" placeholder="Enter your Age">
+            </div>
+             <div class="col-md-6">
+                 <input id="password" oninput="validationData(this)" class="form-control " type="password" placeholder="Enter your Password">
+            </div>
+             <div class="col-md-6">
+                <input id="Repassword" oninput="validationData(this)" class="form-control " type="password" placeholder="Enter your Repassword">
+            </div>
+            <button id="btns" type="button" onclick="clearForm()" class="btn btn-outline-danger w-25 mb-3 d-none">Submit</button>
+        </div>
+    </div>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/nav.js"></script>
+   <script src="./js/contact.js"></script>
+</body> 
+</html>

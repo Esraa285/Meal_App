@@ -1,11 +1,10 @@
-
 let fName = document.getElementById('name');
 let fEmail = document.getElementById('email');
 let fPhone = document.getElementById('phone');
 let fAge = document.getElementById('age');
 let fPassword = document.getElementById('password');
 let fRepassword = document.getElementById('Repassword');
-let btn = document.getElementById('btns');
+let btns = document.getElementById('btns');
 
 function validationData(ele) {
     let regex = {
@@ -46,7 +45,7 @@ function checkAllValid() {
     fPassword.classList.contains("is-valid") && fRepassword.classList.contains("is-valid")) 
     {
   
-        btn.classList.remove("d-none");
+        btns.classList.remove("d-none");
     }
 }
    function clearForm() {
@@ -63,6 +62,6 @@ function checkAllValid() {
     fAge.classList.remove('is-valid', 'is-invalid');
     fPassword.classList.remove('is-valid', 'is-invalid');
     fRepassword.classList.remove('is-valid', 'is-invalid');
-    btn.classList.add('d-none'); 
+    btns.classList.add('d-none'); 
 }
 
